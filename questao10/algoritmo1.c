@@ -30,6 +30,7 @@ void dijkstra(int grafo[Vertices][Vertices], int n, int source)
     int i, j, count, mindistancia, prox;
     char cidades[Vertices][20] = {"Sao Paulo", "Ribeirao Preto", "Campinas", "Pocos de Caldas", "Rio de Janeiro"};
 
+/* Inicializa cada vertice com o valor INF que é equivalente a infinito*/
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
@@ -82,7 +83,7 @@ void dijkstra(int grafo[Vertices][Vertices], int n, int source)
         }
         count++;
     }
-
+/*Essa a parte em diante irá imprimir a saída e o caminho */
     for (i = 0; i < n; i++)
     {
         if (i == source)
