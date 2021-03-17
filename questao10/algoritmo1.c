@@ -2,7 +2,7 @@
 #include <stdlib.h>
 //inf valor que iniciará cada vertice
 #define INF 99999
-
+// definindo o numero de vertices do problema
 #define Vertices 5
 
 void dijkstra(int grafo[Vertices][Vertices], int n, int source);
